@@ -44,6 +44,7 @@ for i in range (fingers):
         else:
             roll_col='красный'
         if num_col==roll_col:
+            print('*Тебе не отрезали ниодного пальца*')
             print('"Повезло тебе"')
         else:
             fingers -= bet
@@ -53,9 +54,7 @@ for i in range (fingers):
                 print('*Тебе отрезали', bet, 'пальца*')
             else:
                 print('*Тебе отрезали', bet, 'пальцев*')
-            if fingers>0:
-                print('"Вращай давай"')
-            else:
+            if fingers<=0:
                 flag=False
                 break
 print('"Повезло тебе, живой остался. А теперь беги, с#ка Форест, беги"')
