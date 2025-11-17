@@ -17,7 +17,6 @@ print('"Мы, а точнее ты будешь играть в самую об�
 print('"Что-ж, начнем..."')
 flag=True
 import random
-for i in range (fingers):
     while fingers>0:
         bet=int(input('"Делай ставку" '))
         if bet<=0 or bet>fingers:
